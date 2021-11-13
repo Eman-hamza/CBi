@@ -1,0 +1,11 @@
+import pyopenms
+from pyopenms import *
+
+his = ResidueDB().getResidue("Histidine")
+print(his.getName())
+print(his.getThreeLetterCode())
+print(his.getOneLetterCode())
+print(his.getAverageWeight())
+print(his.getMonoWeight())
+print(his.getPka())
+print(his.getFormula().toString())

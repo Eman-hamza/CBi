@@ -1,0 +1,4 @@
+    import pyopenms
+    from pyopenms import *
+    help(pyopenms.Constants)
+    print ("Avogadro's number is", pyopenms.Constants.AVOGADRO);

@@ -1,0 +1,12 @@
+import pyopenms
+from pyopenms import *
+edb = ElementDB()
+
+sulfur_isoDist = {"mass": [], "abundance": []}
+
+sulfur = edb.getElement("S")
+isotopes = sulfur.getIsotopeDistribution()
+for iso in isotopes.getContainer():
+    print ("Sulfur isotope", iso.getMZ(), "has abundance", iso.getIntensity()*100, "%")
+    sulfur_isoDist["mass"].append(iso.getMZ())
+    sulfur_isoDist["abundance"].append((iso.getIntensity() * 100))

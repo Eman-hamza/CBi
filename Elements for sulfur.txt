@@ -1,0 +1,16 @@
+import pyopenms
+from pyopenms import *
+edb = ElementDB()
+
+
+edb.hasElement("S")
+
+sulfur = edb.getElement("S")
+print(sulfur.getName())
+print(sulfur.getSymbol())
+print(sulfur.getMonoWeight())
+print(sulfur.getAverageWeight())
+isotopes = sulfur.getIsotopeDistribution()
+
+print ("One mole of oxygen weighs", 2*sulfur.getAverageWeight(), "grams")
+print ("One mole of 16O2 weighs", 2*sulfur.getMonoWeight(), "grams")

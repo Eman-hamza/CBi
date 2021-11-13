@@ -1,0 +1,11 @@
+import pyopenms
+from pyopenms import *
+
+ox = ModificationsDB().getModification("Oxidation")
+print(ox.getUniModAccession())
+print(ox.getUniModRecordId())
+print(ox.getDiffMonoMass())
+print(ox.getId())
+print(ox.getFullId())
+print(ox.getFullName())
+print(ox.getDiffFormula())

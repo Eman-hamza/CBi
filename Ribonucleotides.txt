@@ -1,0 +1,13 @@
+import pyopenms
+from pyopenms import *
+
+uridine = RibonucleotideDB().getRibonucleotide(b"U")
+print(uridine.getName())
+print(uridine.getCode())
+print(uridine.getAvgMass())
+print(uridine.getMonoMass())
+print(uridine.getFormula().toString())
+print(uridine.isModified())
+methyladenosine = RibonucleotideDB().getRibonucleotide(b"m1A")
+print(methyladenosine.getName())
+print(methyladenosine.isModified())
