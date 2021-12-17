@@ -1,2 +1,2 @@
-# CBi
+# Chemistry
 assigment 1
